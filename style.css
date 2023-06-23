@@ -1,0 +1,37 @@
+			.container{
+				margin:auto;
+				width:50%;
+				font-family:sans-serif;
+			}
+			h1{
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				height:17%;
+				font-size:40px;
+				background-color:red;
+			}
+			#submit{
+				width:70%;
+				padding:1%;
+				margin:10px 120px;
+			}
+			input{
+				width:65%;
+				margin-left:30px;
+			}
+			.r{
+				display:flex;
+				justify-content:right;
+				margin-bottom:20px;
+				font-size:18px;
+				height:5%;
+			}
+			#salary{
+				width:56%;
+			}
+			
+			small{
+				margin-left:10px;
+				color:red;
+			}

@@ -1,60 +1,58 @@
 <html>
 	<head>
+		<link href="./style.css" rel="stylesheet"/>
+		<script src="./validate.js" ></script>
 		<title>Form</title>
-		<style>
-			div{
-				margin:auto;
-				width:50%;
-				font-family:sans-serif;
-			}
-			h1{
-				box-sizing: border-box;
-				padding:4%;
-				text-align:center;
-				font-size:40px;
-				background-color:red;
-				height:15%;
-			}
-			form{
-				font-weight:bold;
-			}
-			input,label{
-				margin:1%;
-			}
-			input{
-				width:70%;
-				height:5%;
-				margin-right:10px;
-			}
-			#submit{
-				width:50%;
-				padding:1%;
-				margin:0px 27%;
-			}
-		</style>
 	</head>
 	<body>
-		<div>
+		<div class="container">
 			<h1>HTML 5 Form Input Fields</h1>
-			<form>
-				<label>Name: </label>
-				<input type="text"/><br>
-				<label>Password: </label>
-				<input type="password"/><br>
-				<label>Email: </label>
-				<input type="text"/><br>
-				<label>Url: </label>
-				<input type="text"/><br>
-				<label>Number: </label>
-				<input type="number"/><br>
-				<label>Tel: </label>
-				<input type="number"/><br>
-				<label>Search input type: </label>
-				<input type="number"/><br>
-				<label>Choose data and time</label>
-				<input type="number"/><br>
-				<label>Choose your salary</label>
-				<input type="number"/><br><br>
+			<form id="my-form" action="#" onsubmit="return validateForm()" method="post">
+				<div class="r">
+					<label>Name: </label>
+					<input type="text" id="name"/><br>
+					<small></small>
+				</div>
+				<div class="r">
+					<label>Password: </label>
+					<input type="password"/>
+					<small></small>
+				</div>
+				<div class="r">
+					<label>Email: </label>
+					<input type="text"/>
+					<small></small>
+				</div>
+				<div class="r">
+					<label>Url: </label>
+					<input type="text"/>
+					<small></small>
+				</div>
+				<div class="r">
+					<label>Number: </label>
+					<input type="number"/>
+					<small></small>
+				</div>
+				<div class="r">
+					<label>Tel: </label>
+					<input type="number"/>
+					<small></small>
+				</div>
+				<div class="r">
+					<label>Search input type: </label>
+					<input type="number"/>
+					<small></small>
+				</div>
+				<div class="r">
+					<label>Choose data and time: </label>
+					<input type="datetime-local"/>
+					<small></small>
+				</div>
+				<div class="r">
+					<label>Choose your salary:</label>
+					<input type="range" name="salary" id="salary" min="300000"
+           				 max="500000" step="100" value="400000">400000<br><br>
+           		</div>
 				<input id="submit" type="submit" value="Submit">
 			<form>
 		</div>
