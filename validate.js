@@ -12,5 +12,9 @@ function validateForm(){
 		document.querySelectorAll("small")[4].innerHTML="Invalid Number";
 		return false;
 	}
+	if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}/.test(form.elements[1]==false)){
+		document.querySelectorAll("small")[1].innerHTML="Type valid password";
+		return false;
+	}
 	return true;
 }
