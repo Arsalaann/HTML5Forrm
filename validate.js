@@ -8,4 +8,9 @@ function validateForm(){
 		document.querySelectorAll("small")[2].innerHTML="Invalid Email";
 		return false;
 	}
+	if(/[0-9]{2}\s[0-9]{10}/.test(form.elements[4].value)==false){
+		document.querySelectorAll("small")[4].innerHTML="Invalid Number";
+		return false;
+	}
+	return true;
 }
